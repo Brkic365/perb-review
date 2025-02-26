@@ -1,0 +1,26 @@
+.searchbar {
+    min-width: 10rem;
+    padding: 0.5rem;
+    background-color: var(--background);
+    border-radius: 0.25rem;
+
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    svg {
+        width: 1.2rem;
+        height: 1.2rem;
+        color: var(--green-light);
+    }
+
+    input {
+        background-color: transparent;
+        color: var(--text-dark);
+        padding: 0;
+        border: none;
+        outline: none;
+        width: 100%;
+        font-size: 0.9rem;
+    }
+}

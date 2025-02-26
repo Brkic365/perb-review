@@ -1,0 +1,110 @@
+.forumPost {
+    width: 100%;
+    background-color: var(--text-light);
+    padding: 1rem;
+    border-radius: 0.5rem;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    place-content: space-between;
+
+    .left {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        img {
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 50%;
+        }
+
+        .info {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            gap: 0.5rem;
+
+            h3 {
+                color: var(--text-dark);
+                font-size: 1rem;
+            }
+
+            .userInfo {
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+                gap: 0.25rem;
+    
+                p, a {
+                    color: var(--text-mid);
+                    font-size: 0.8rem;
+                }
+
+                a {
+                    text-decoration: underline;
+                }
+    
+                .seperator {
+                    display: none;
+                    width: 0.4rem;
+                    height: 0.4rem;
+                    border-radius: 50%;
+                    background-color: var(--green-light);
+                }
+            }
+        }
+    }
+
+    .right {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        .threads, .likes {
+            background-color: var(--background);
+            padding: 0.6rem 1rem;
+            border-radius: 2rem;
+
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+
+            svg {
+                color: var(--text-mid);
+                width: 0.9rem;
+                height: 0.9rem;
+            }
+
+            p {
+                color: var(--text-mid);
+                font-size: 0.8rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 650px) {
+    .forumPost {
+        .left {
+            .info {
+                .userInfo {
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 0.4rem;
+
+                    .seperator {
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        .right {
+            flex-direction: row;
+        }
+    }
+}

@@ -1,0 +1,340 @@
+[
+    {
+            "id": "forum-001",
+            "name": "Tech Discussions",
+            "description": "A place to discuss the latest in technology, gadgets, and software.",
+            "threads": [
+                {
+                    "id": "thread-001",
+                    "title": "Is AI Taking Over?",
+                    "owner": {
+                        "id": "user-123",
+                        "username": "tech_guru"
+                    },
+                    "datePosted": "2025-02-04T10:15:00Z",
+                    "likes": 15,
+                    "replies": 3,
+                    "posts": [
+                        {
+                            "id": "post-001",
+                            "user": {
+                                "id": "user-123",
+                                "username": "tech_guru"
+                            },
+                            "datePosted": "2025-02-04T10:15:00Z",
+                            "likes": 8,
+                            "text": "Is AI Taking Over?",
+                            "image": null,
+                            "repliesTo": null
+                        },
+                        {
+                            "id": "post-002",
+                            "user": {
+                                "id": "user-456",
+                                "username": "ai_enthusiast"
+                            },
+                            "datePosted": "2025-02-04T11:00:00Z",
+                            "likes": 5,
+                            "text": "I believe AI is transforming industries, but it's not exactly taking over. It's more about augmentation than replacement.",
+                            "image": "https://example.com/images/ai_future.png",
+                            "repliesTo": "post-001"
+                        }
+                    ]
+                },
+                {
+                    "id": "thread-002",
+                    "title": "The Future of Quantum Computing",
+                    "owner": {
+                        "id": "user-789",
+                        "username": "quantum_fan"
+                    },
+                    "datePosted": "2025-02-05T09:00:00Z",
+                    "likes": 20,
+                    "replies": 4,
+                    "posts": [
+                        {
+                            "id": "post-003",
+                            "user": {
+                                "id": "user-789",
+                                "username": "quantum_fan"
+                            },
+                            "datePosted": "2025-02-05T09:00:00Z",
+                            "likes": 10,
+                            "text": "The Future of Quantum Computing",
+                            "image": null,
+                            "repliesTo": null
+                        },
+                        {
+                            "id": "post-004",
+                            "user": {
+                                "id": "user-321",
+                                "username": "tech_savvy"
+                            },
+                            "datePosted": "2025-02-05T10:30:00Z",
+                            "likes": 6,
+                            "text": "Quantum computing has the potential to revolutionize data encryption and problem-solving capabilities beyond what we can imagine today.",
+                            "image": null,
+                            "repliesTo": "post-003"
+                        },
+                        {
+                            "id": "post-005",
+                            "user": {
+                                "id": "user-654",
+                                "username": "curious_mind"
+                            },
+                            "datePosted": "2025-02-05T11:00:00Z",
+                            "likes": 4,
+                            "text": "Do you think quantum computing will be accessible to the general public anytime soon?",
+                            "image": null,
+                            "repliesTo": "post-003"
+                        }
+                    ]
+                },
+                {
+                    "id": "thread-003",
+                    "title": "The Impact of 5G on IoT",
+                    "owner": {
+                        "id": "user-987",
+                        "username": "network_guru"
+                    },
+                    "datePosted": "2025-02-06T14:45:00Z",
+                    "likes": 18,
+                    "replies": 2,
+                    "posts": [
+                        {
+                            "id": "post-006",
+                            "user": {
+                                "id": "user-987",
+                                "username": "network_guru"
+                            },
+                            "datePosted": "2025-02-06T14:45:00Z",
+                            "likes": 9,
+                            "text": "The Impact of 5G on IoT",
+                            "image": null,
+                            "repliesTo": null
+                        },
+                        {
+                            "id": "post-007",
+                            "user": {
+                                "id": "user-258",
+                                "username": "iot_dev"
+                            },
+                            "datePosted": "2025-02-06T15:30:00Z",
+                            "likes": 7,
+                            "text": "5G will drastically improve the speed and reliability of IoT devices, enabling smarter cities and real-time data processing.",
+                            "image": "https://example.com/images/5g_iot.png",
+                            "repliesTo": "post-006"
+                        }
+                    ]
+                }
+            ]
+    },{
+            "id": "forum-002",
+            "name": "Gaming Enthusiasts",
+            "description": "A community for gamers to discuss games, strategies, and hardware.",
+            "threads": [
+                {
+                    "id": "thread-004",
+                    "title": "Best RPGs of 2025",
+                    "owner": {
+                        "id": "user-111",
+                        "username": "gamer_king"
+                    },
+                    "datePosted": "2025-02-07T12:00:00Z",
+                    "likes": 25,
+                    "replies": 5,
+                    "posts": [
+                        {
+                            "id": "post-008",
+                            "user": {
+                                "id": "user-111",
+                                "username": "gamer_king"
+                            },
+                            "datePosted": "2025-02-07T12:00:00Z",
+                            "likes": 12,
+                            "text": "What are the best RPGs released this year? I'm looking for something with a deep story and great graphics.",
+                            "image": null,
+                            "repliesTo": null
+                        },
+                        {
+                            "id": "post-009",
+                            "user": {
+                                "id": "user-222",
+                                "username": "rpg_fanatic"
+                            },
+                            "datePosted": "2025-02-07T12:30:00Z",
+                            "likes": 8,
+                            "text": "Definitely check out 'Eclipse of the Ancients'. The story is incredible, and the graphics are top-notch.",
+                            "image": "https://example.com/images/eclipse_ancients.jpg",
+                            "repliesTo": "post-008"
+                        },
+                        {
+                            "id": "post-010",
+                            "user": {
+                                "id": "user-333",
+                                "username": "retro_gamer"
+                            },
+                            "datePosted": "2025-02-07T13:00:00Z",
+                            "likes": 5,
+                            "text": "I'm more into retro-style RPGs. 'Pixel Quest' has been my favorite so far this year.",
+                            "image": null,
+                            "repliesTo": "post-008"
+                        }
+                    ]
+                },
+                {
+                    "id": "thread-005",
+                    "title": "Upcoming Gaming Consoles",
+                    "owner": {
+                        "id": "user-444",
+                        "username": "console_master"
+                    },
+                    "datePosted": "2025-02-08T10:00:00Z",
+                    "likes": 30,
+                    "replies": 6,
+                    "posts": [
+                        {
+                            "id": "post-011",
+                            "user": {
+                                "id": "user-444",
+                                "username": "console_master"
+                            },
+                            "datePosted": "2025-02-08T10:00:00Z",
+                            "likes": 15,
+                            "text": "What are the most anticipated gaming consoles coming out this year?",
+                            "image": null,
+                            "repliesTo": null
+                        },
+                        {
+                            "id": "post-012",
+                            "user": {
+                                "id": "user-555",
+                                "username": "tech_junkie"
+                            },
+                            "datePosted": "2025-02-08T10:30:00Z",
+                            "likes": 10,
+                            "text": "The new 'Nexus X' looks promising with its 16K resolution and AI-driven gameplay enhancements.",
+                            "image": "https://example.com/images/nexus_x.jpg",
+                            "repliesTo": "post-011"
+                        },
+                        {
+                            "id": "post-013",
+                            "user": {
+                                "id": "user-666",
+                                "username": "vr_lover"
+                            },
+                            "datePosted": "2025-02-08T11:00:00Z",
+                            "likes": 7,
+                            "text": "I'm excited about the 'VR-9000'. It's supposed to have full-body haptic feedback and ultra-low latency.",
+                            "image": null,
+                            "repliesTo": "post-011"
+                        }
+                    ]
+                }
+            ]
+    },{
+            "id": "forum-003",
+            "name": "Health & Wellness",
+            "description": "A space to discuss health, fitness, and mental well-being.",
+            "threads": [
+                {
+                    "id": "thread-006",
+                    "title": "Best Diets for 2025",
+                    "owner": {
+                        "id": "user-777",
+                        "username": "health_nut"
+                    },
+                    "datePosted": "2025-02-09T09:00:00Z",
+                    "likes": 22,
+                    "replies": 4,
+                    "posts": [
+                        {
+                            "id": "post-014",
+                            "user": {
+                                "id": "user-777",
+                                "username": "health_nut"
+                            },
+                            "datePosted": "2025-02-09T09:00:00Z",
+                            "likes": 11,
+                            "text": "What are the best diets to follow in 2025? I'm looking for something sustainable and healthy.",
+                            "image": null,
+                            "repliesTo": null
+                        },
+                        {
+                            "id": "post-015",
+                            "user": {
+                                "id": "user-888",
+                                "username": "fitness_guru"
+                            },
+                            "datePosted": "2025-02-09T09:30:00Z",
+                            "likes": 7,
+                            "text": "The Mediterranean diet is still one of the best. It's balanced and has been proven to improve heart health.",
+                            "image": "https://example.com/images/mediterranean_diet.jpg",
+                            "repliesTo": "post-014"
+                        },
+                        {
+                            "id": "post-016",
+                            "user": {
+                                "id": "user-999",
+                                "username": "vegan_life"
+                            },
+                            "datePosted": "2025-02-09T10:00:00Z",
+                            "likes": 5,
+                            "text": "I recommend a plant-based diet. It's not only good for your health but also for the environment.",
+                            "image": null,
+                            "repliesTo": "post-014"
+                        }
+                    ]
+                },
+                {
+                    "id": "thread-007",
+                    "title": "Mental Health in the Digital Age",
+                    "owner": {
+                        "id": "user-101",
+                        "username": "mindful_tech"
+                    },
+                    "datePosted": "2025-02-10T14:00:00Z",
+                    "likes": 18,
+                    "replies": 3,
+                    "posts": [
+                        {
+                            "id": "post-017",
+                            "user": {
+                                "id": "user-101",
+                                "username": "mindful_tech"
+                            },
+                            "datePosted": "2025-02-10T14:00:00Z",
+                            "likes": 9,
+                            "text": "How do you manage your mental health in this fast-paced digital world?",
+                            "image": null,
+                            "repliesTo": null
+                        },
+                        {
+                            "id": "post-018",
+                            "user": {
+                                "id": "user-202",
+                                "username": "zen_master"
+                            },
+                            "datePosted": "2025-02-10T14:30:00Z",
+                            "likes": 6,
+                            "text": "I find that regular meditation and digital detoxes help me stay grounded.",
+                            "image": "https://example.com/images/meditation.jpg",
+                            "repliesTo": "post-017"
+                        },
+                        {
+                            "id": "post-019",
+                            "user": {
+                                "id": "user-303",
+                                "username": "tech_addict"
+                            },
+                            "datePosted": "2025-02-10T15:00:00Z",
+                            "likes": 4,
+                            "text": "It's tough, but setting boundaries with screen time has been crucial for my mental health.",
+                            "image": null,
+                            "repliesTo": "post-017"
+                        }
+                    ]
+                }
+            ]
+        }
+]

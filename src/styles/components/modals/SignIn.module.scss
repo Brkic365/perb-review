@@ -1,0 +1,104 @@
+.signInContainer {
+    position: absolute;
+}
+
+.signIn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--foreground);
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    padding: 1rem;
+    border-radius: 0.5rem;
+    width: 80%;
+    max-width: 30rem;
+
+    .close {
+        position: absolute;
+        width: 1.25rem;
+        height: 1.25rem;
+        top: 0.5rem;
+        right: 0.5rem;
+        opacity: 0.5;
+        color: var(--text-dark);
+        cursor: pointer;
+    }
+
+    h3 {
+        color: var(--text-dark);
+        text-align: center;
+    }
+
+    p {
+        color: var(--text-mid);
+        text-align: center;
+        width: 70%;
+        line-height: 150%;
+    }
+
+    form {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 0.75rem;
+        margin: 1rem 0;
+        width: 100%;
+
+        .input {
+            width: 100%;
+            padding: 0.75rem;
+            background-color: var(--background);
+            border-radius: 0.25rem;
+        
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        
+            svg {
+                width: 1.5rem;
+                height: 1.5rem;
+                color: var(--text-mid);
+            }
+        
+            input {
+                background-color: transparent;
+                color: var(--text-dark);
+                padding: 0;
+                border: none;
+                outline: none;
+                width: 100%;
+                font-size: 0.9rem;
+            }
+        }
+
+        button {
+            width: 100%;
+            padding: 0.75rem;
+            background-color: var(--green-light);
+            border: none;
+            outline: none;
+            color: var(--foreground);
+            font-size: 0.9rem;
+            border-radius: 0.25rem;
+            cursor: pointer;
+        }
+    }
+
+    .ctaText {
+        width: 100%;
+        font-size: 0.8rem;
+        color: var(--text-dark);
+        cursor: pointer;
+        
+        span {
+            text-decoration: underline;
+            color: var(--text-mid);
+        }
+    }
+}

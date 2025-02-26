@@ -1,0 +1,109 @@
+.navbar {
+    width: 100%;
+    background-color: var(--foreground);
+
+    .container {
+        width: 100%;
+        background-color: var(--foreground);
+        
+        display: flex;
+        align-items: center;
+        place-content: space-between;
+    
+        padding: 0.75rem;
+    
+        .links {
+            display: none;
+        }
+    
+        .right {
+            .buttons {
+                display: none;
+            }
+        }
+    
+        .mobileMenu {
+            width: 2rem;
+            height: 2rem;
+            color: var(--text-dark);
+        }
+    }
+    
+}
+
+@media screen and (min-width: 950px) {
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .container {
+            max-width: 70rem;
+            display: flex;
+            align-items: center;
+            place-content: space-between;
+    
+            .links {
+                display: flex;
+                align-items: center;
+                color: var(--text-dark);
+                list-style-type: none;
+                gap: 3rem;
+                font-weight: 600;
+
+                li {
+                    outline: none;
+                    border: none;
+                }
+
+                .active {
+                    opacity: 1;
+                    transition: opacity 0.3s ease;
+                  }
+                  
+                  .inactive {
+                    opacity: 0.5;
+                    transition: opacity 0.3s ease;
+                  }
+            }
+    
+            .mobileMenu {
+                display: none;
+            }
+    
+            .right {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+    
+                .buttons {
+                    display: flex;
+                    align-items: center;
+                    gap: 0.5rem;
+            
+                    .signIn {
+                        background-color: var(--green-light);
+                        color: var(--foreground);
+                        padding: 0.5rem 1.5rem;
+                        font-size: 1rem;
+                        border: none;
+                        outline: none;
+                        cursor: pointer;
+                        border-radius: 0.25rem;
+                    }
+            
+                    .register {
+                        background-color: transparent;
+                        color: var(--text-dark);
+                        padding: 0.5rem 1.5rem;
+                        font-size: 1rem;
+                        border: none;
+                        outline: none;
+                        cursor: pointer;
+                        border-radius: 0.25rem;
+                    }
+                }
+            }
+        }
+    }
+}

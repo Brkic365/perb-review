@@ -1,0 +1,26 @@
+.formError {
+    width: 100%;
+    background-color: var(--error-background);
+    color: var(--error-foreground);
+    border: 1px solid var(--error-foreground);
+
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+
+    display: flex;
+    align-items: center;
+    text-align: left;
+    gap: 0.5rem;
+
+    svg {
+        color: var(--error-foreground);
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .errorText {
+        color: var(--error-foreground);
+        font-size: 0.9rem;
+        text-align: left;
+    }
+}

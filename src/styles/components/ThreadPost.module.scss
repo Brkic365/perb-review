@@ -1,0 +1,99 @@
+.threadPost {
+    width: 100%;
+    background-color: var(--text-light);
+    padding: 1rem;
+    border-radius: 0.5rem;
+
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+    
+    .user {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        img {
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 50%;
+        }
+
+        .info {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            gap: 0.5rem;
+
+            h4 {
+                color: var(--text-dark);
+                font-size: 1rem;
+            }
+
+            p {
+                color: var(--text-mid);
+                font-size: 0.8rem;
+            }
+        }
+    }
+
+    .content {
+
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        .replyingPost {
+            width: 100%;
+            background-color: var(--background);
+            padding: 0.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.5rem;
+
+            border: 1px solid var(--green-light);
+            border-radius: 0.5rem;
+
+            h3 {
+                font-size: 0.9rem;
+                color: var(--green-light);
+            }
+        }
+
+        p {
+            font-size: 0.9rem;
+            color: var(--text-dark);
+        }
+    }
+
+    .buttons {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+
+        .reply, .likes {
+            cursor: pointer;
+            background-color: var(--background);
+            padding: 0.6rem 1rem;
+            border-radius: 2rem;
+
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+
+            svg {
+                color: var(--text-mid);
+                width: 0.9rem;
+                height: 0.9rem;
+            }
+
+            p {
+                color: var(--text-mid);
+                font-size: 0.8rem;
+            }
+        }
+    }
+}
