@@ -11,10 +11,7 @@ import { useSearchParams } from 'next/navigation'
 import { Suspense } from 'react'
 
 function Search() {
-    const searchParams = useSearchParams();
   const [isClient, setIsClient] = useState(false);
-
-  const search = searchParams.get('search')
 
   // Only run after the component has mounted on the client
   useEffect(() => {
@@ -23,7 +20,6 @@ function Search() {
 
   // Fetch forum data when client is loaded and params are available
   useEffect(() => {
-    console.log(search);
   }, [isClient]);
 
   // Ensure the component only renders on the client
@@ -32,7 +28,6 @@ function Search() {
   }
 
   return (
-    <Suspense>
     <main className={styles.forumPage}>
       <Banner />
       <section className={styles.threadsPosts}>
@@ -46,7 +41,6 @@ function Search() {
         </section>
       </section>
     </main>
-    </Suspense>
   );
 }
 
