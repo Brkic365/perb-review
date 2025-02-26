@@ -8,6 +8,8 @@ import ForumPost from '@/components/ForumPost';
 
 import { useSearchParams } from 'next/navigation'
 
+import { Suspense } from 'react'
+
 function Search() {
     const searchParams = useSearchParams();
   const [isClient, setIsClient] = useState(false);
@@ -30,6 +32,7 @@ function Search() {
   }
 
   return (
+    <Suspense>
     <main className={styles.forumPage}>
       <Banner />
       <section className={styles.threadsPosts}>
@@ -43,6 +46,7 @@ function Search() {
         </section>
       </section>
     </main>
+    </Suspense>
   );
 }
 
