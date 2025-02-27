@@ -19,8 +19,8 @@ const sortOptions = [
 ];
 
 const sortStyles: StylesConfig = {
-  control: (styles) => ({ ...styles, backgroundColor: 'var(--foreground)', color: 'var(--text-dark)', cursor: `pointer` }),
-  option: (styles) => ({ ...styles, backgroundColor: 'var(--foreground)', color: 'var(--text-dark)', cursor: `pointer` }),
+  control: (styles) => ({ ...styles, backgroundColor: 'var(--foreground)', color: 'var(--text-dark)', cursor: `pointer`, zIndex: "1" }),
+  option: (styles) => ({ ...styles, backgroundColor: 'var(--foreground)', color: 'var(--text-dark)', cursor: `pointer`, zindex: "1" }),
   input: (styles) => ({ ...styles }),
   placeholder: (styles) => ({ ...styles }),
   singleValue: (styles, { data }) => ({ ...styles }),
