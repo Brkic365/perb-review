@@ -11,6 +11,8 @@ import { useParams } from 'next/navigation';
 
 import data from "../../../public/data/forums.json";
 
+import Navbar from "@/components/Navbar";
+
 const sortOptions = [
   { value: "views", label: "Views" },
   { value: "likes", label: "Likes" },
@@ -49,8 +51,17 @@ function ForumPage() {
     return null;
   }
 
+  // Sort the threads by the date in descending order (most recent first)
+  const sortedThreads = forum.threads.sort((a: any, b: any) => {
+    // Assuming threads have a 'date' field in a recognizable format, such as ISO 8601
+    const dateA = new Date(a.datePosted).getTime();
+    const dateB = new Date(b.datePosted).getTime();
+    return dateB - dateA; // Sort by descending date
+  });
+
   return (
     <main className={styles.forumPage}>
+      <Navbar />
       <Banner />
       <section className={styles.threadsPosts}>
         <LatestPosts />
@@ -73,7 +84,7 @@ function ForumPage() {
           </section>
           <section className={styles.list}>
             {
-              forum.threads.map((thread: any) => {
+              sortedThreads.map((thread: any) => {
                 return <ForumPost post={thread} forumId={forum.id} key={thread.id} />;
               })
             }

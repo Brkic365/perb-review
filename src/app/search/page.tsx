@@ -4,11 +4,8 @@ import React, { useState, useEffect } from 'react';
 import styles from "@/styles/ForumPage.module.scss";
 import Banner from '@/components/Banner';
 import LatestPosts from '@/components/LatestPosts';
-import ForumPost from '@/components/ForumPost';
 
-import { useSearchParams } from 'next/navigation'
-
-import { Suspense } from 'react'
+import Navbar from "@/components/Navbar";
 
 function Search() {
   const [isClient, setIsClient] = useState(false);
@@ -29,6 +26,7 @@ function Search() {
 
   return (
     <main className={styles.forumPage}>
+      <Navbar />
       <Banner />
       <section className={styles.threadsPosts}>
         <LatestPosts />

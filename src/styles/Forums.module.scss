@@ -1,0 +1,57 @@
+.forumsPage {
+    padding: 0.5rem;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+
+    .forumsPosts {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column-reverse;
+        gap: 0.5rem;
+        width: 100%;
+        max-width: 70rem;
+        height: fit-content;
+
+        .forums {
+            width: 100%;
+            height: 26rem;
+            background-color: var(--foreground);
+            border-radius: 0.5rem;
+            gap: 1rem;
+            padding: 1rem;
+
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            overflow-y: scroll;
+        }
+    }
+}
+
+@media screen and (min-width: 950px) {
+    .forumsPage {
+        .forumsPosts {
+            flex-direction: row-reverse;
+            
+            .forums {
+                width: 60%;
+                height: 40rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .forumsPage {
+        .forumsPosts {
+            .forums {
+                width: 70%;
+            }
+        }
+    }
+}

@@ -2,14 +2,13 @@
 
 import { useState, useEffect } from "react";
 
-import Image from "next/image";
 import styles from "@/styles/NewPosts.module.scss";
 import Banner from "@/components/Banner";
-import LatestPosts from "@/components/LatestPosts";
-import ForumDiscussion from "@/components/ForumDiscussion";
 import ForumPost from "@/components/ForumPost";
 
 import data from "../../../public/data/forums.json";
+
+import Navbar from "@/components/Navbar";
 
 export default function NewPosts() {
 
@@ -48,6 +47,7 @@ export default function NewPosts() {
 
   return (
     <main className={styles.newPosts}>
+      <Navbar />
       <Banner />
         <section className={styles.posts}>
           {

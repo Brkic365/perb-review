@@ -17,6 +17,8 @@ import data from "../../../../public/data/forums.json";
 import Register from '@/components/modals/Register';
 import SignIn from '@/components/modals/SignIn'
 
+import Navbar from "@/components/Navbar";
+
 function PostPage() {
   const params = useParams();
 
@@ -48,6 +50,7 @@ function PostPage() {
 
   return (
     <main className={styles.postPage}>
+      <Navbar />
       <SignIn open={signInOpen} handleClose={() => setSignInOpen(false)} handleOpenRegister={() => {
         setSignInOpen(false);
         setRegisterOpen(true);
