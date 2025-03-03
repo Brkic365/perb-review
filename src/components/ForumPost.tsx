@@ -5,6 +5,7 @@ import styles from "@/styles/components/ForumPost.module.scss";
 import { IoChatbox, IoHeart } from "react-icons/io5";
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
+import { format } from 'date-fns';
 
 function ForumPost({ post, forumId, includeForum = false }: { post: any, forumId: string, includeForum?: boolean }) {
   const router = useRouter();
@@ -22,7 +23,7 @@ function ForumPost({ post, forumId, includeForum = false }: { post: any, forumId
           <div className={styles.userInfo}>
             <p>{post.owner.username}</p>
             <div className={styles.seperator} />
-            <p>{new Date(post.datePosted).toDateString()}</p>
+            <p>{format(new Date(post.datePosted), 'MMM dd, yyyy')}</p>
             {includeForum && (
               <>
                 <div className={styles.seperator} />

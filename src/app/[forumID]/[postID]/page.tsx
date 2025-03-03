@@ -66,7 +66,7 @@ function PostPage() {
               <div className={styles.userInfo}>
                 <p>{thread.owner.username}</p>
                 <div className={styles.seperator} />
-                <p>{format(new Date(thread.datePosted), 'MMM dd, yyyy')}</p>
+                <p>{format(new Date(thread.datePosted), 'MM dd, yyyy')}</p>
               </div>
               <Link href={`/${forum.id}`}>
                 Forums / {forum.name}

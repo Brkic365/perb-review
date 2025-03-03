@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from "@/styles/components/LatestPost.module.scss";
 import Link from 'next/link';
+import { format } from 'date-fns';
 
 function LatestPost({ post } : { post: any}) {
   return (
@@ -11,7 +12,7 @@ function LatestPost({ post } : { post: any}) {
         <div className={styles.userInfo}>
           <p>{post.owner.username}</p>
           <div className={styles.seperator} />
-          <p>{new Date(post.datePosted).toDateString()}</p>
+          <p>{format(new Date(post.datePosted), 'MMM dd, yyyy')}</p>
         </div>
         <Link href={`${post.forumId}`}>{post.forumName}</Link>
       </div>
